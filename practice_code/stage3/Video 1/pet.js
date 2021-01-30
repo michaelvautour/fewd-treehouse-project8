@@ -17,6 +17,16 @@ class Pet {
         }
     }
 
+    get owner() {
+        return this._owner;
+    }
+
+    set owner(owner) {
+        this._owner = owner;
+        console.log(`setter called: ${owner}`);
+    }
+
+
     speak() {
         console.log(this.sound);
     }
@@ -33,3 +43,6 @@ ernie.speak();
 vera.speak();
 
 console.log(ernie.activity);
+
+ernie.owner = 'Ashley';
+console.log(ernie.owner);
