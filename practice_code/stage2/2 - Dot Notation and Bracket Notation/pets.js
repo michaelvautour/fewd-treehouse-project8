@@ -11,4 +11,9 @@ let prop = 'breed'
 console.log(ernie.age);
 console.log(ernie.breed);
 ernie.bark();
-// ernie(prop);
+//update object literal using bracket notation
+ernie['age'] = 2;
+
+//add a property to existing object literal using dot notation
+ernie.color = 'black';
+console.log(ernie);
