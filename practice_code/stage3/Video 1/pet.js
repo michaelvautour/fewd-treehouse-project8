@@ -6,6 +6,17 @@ class Pet {
         this.sound = sound;
     }
 
+    get activity() {
+        const today = new Date();
+        const hour = today.getHours();
+        
+        if (hour > 8 && hour <= 20) {
+            return 'playing';
+        } else {
+            return 'sleeping';
+        }
+    }
+
     speak() {
         console.log(this.sound);
     }
@@ -20,3 +31,5 @@ console.log(vera);
 
 ernie.speak();
 vera.speak();
+
+console.log(ernie.activity);
