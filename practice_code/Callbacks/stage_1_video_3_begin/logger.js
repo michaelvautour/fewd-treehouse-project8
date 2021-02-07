@@ -1,6 +1,7 @@
 const person = {
     name: 'Andrew Chalkley',
-    role: 'JavaScript Teacher'
+    role: 'JavaScript Teacher',
+    city: 'TampaBay'
 }
 
 function logTeacher(teacher) {
